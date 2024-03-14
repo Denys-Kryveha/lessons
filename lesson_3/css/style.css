@@ -1,0 +1,42 @@
+@import url(reset.css);
+
+.title-page.color-aqua {
+    color: aqua;
+}
+
+h2 {
+    color: #444444;
+}
+
+.region,
+li {
+    color: #444596;
+}
+
+img + p {
+    color: aquamarine;
+}
+
+[class*=pre] {
+    color: darkkhaki;
+}
+
+p.preface a {
+    color: cadetblue;
+}
+
+.article .title {
+    color: red;
+}
+
+.article~a {
+    color: blue;
+}
+
+#dniester-canyon>p {
+    color: yellowgreen;
+}
+
+footer * {
+    color: chocolate;
+}
