@@ -9,6 +9,13 @@
 
 @import url(reset.css);
 
+header,
+footer{
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
 .preface * {
     font-family: "Roboto", sans-serif;
 }
