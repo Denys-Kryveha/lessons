@@ -37,7 +37,7 @@ h1 {
     text-transform: capitalize;
 }
 
-.location-of-the-bed ol {
+.location-of-the-bed li {
     text-decoration: line-through;
     text-decoration-color: azure;
     text-decoration-style: dashed;
