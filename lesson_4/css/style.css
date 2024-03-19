@@ -1,0 +1,122 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Rubik:regular&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+@import url(reset.css);
+
+header,
+footer {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.preface * {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+
+.preface p {
+    font-size: 18px;
+    font-style: oblique;
+    text-align: right;
+}
+
+.location-of-the-bed h2 {
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.location-of-the-bed p {
+    font-family: "Rubik", sans-serif;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.location-of-the-bed li {
+    text-decoration: line-through;
+    text-decoration-color: azure;
+    text-decoration-style: dashed;
+}
+
+.location-of-the-bed li {
+    text-decoration: overline;
+    text-decoration-color: aliceblue;
+    text-decoration-style: wavy;
+}
+
+.bed-model * {
+    font-family: "Roboto", sans-serif;
+    word-spacing: 50px;
+}
+
+.bed-model h2 {
+    font-size: 30px;
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.bed-model p {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-transform: lowercase;
+}
+
+.bed-and-interior h2 {
+    font-family: 'Proxima Nova Lt';
+    text-align: center;
+    font-size: 20px;
+    text-shadow:
+        5px 5px 15px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+}
+
+.bed-and-interior p {
+    line-height: 2.5;
+    white-space: nowrap;
+    font-family: 'Proxima Nova Rg';
+}
+
+.big-text {
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Rg';
+}
+
+.living-room h2,
+.choice-of-bed h2 {
+    font-family: 'Proxima Nova Lt';
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(43, 41, 41);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.living-room p,
+.choice-of-bed p {
+    font-family: 'Proxima Nova Rg';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(43, 41, 41);
+    line-height: 1.875;
+}
+
+.internet-shop {
+    font-family: 'Proxima Nova Lt';
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(43, 41, 41);
+    line-height: 1.4;
+}
