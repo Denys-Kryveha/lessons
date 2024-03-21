@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url("fonts.css");
+
+@import url(reset.css);
+
+body {
+    min-width: 1920px;
+}
+
+header,
+footer {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2b2929;
+    text-align: center;
+    background-color: rgba(30, 40, 50, 0.05);
+}
+
+.header li,
+.footer li {
+    display: inline-block;
+    padding: 25px;
+}
+
+.main-block {
+    background-color: #F8F8F8;
+    padding: 70px 315px;
+}
+
+.items {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 40px;
+    font-size: 0;
+}
+
+.title-item {
+    padding: 20px 0px;
+    font-family: 'Proxima Nova', sans-serif;
+    ;
+    font-size: 26px;
+    font-weight: 600;
+    color: #2b2929;
+    text-align: center;
+    line-height: 1.31;
+}
+
+.item {
+    width: 25%;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.main-block h1,
+.living-room h2,
+.choice-of-bed h2 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #2b2929;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.main-block p,
+.living-room p,
+.choice-of-bed p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2b2929;
+    line-height: 1.87;
+}
+
+.living-room {
+    background-color: #F8F8F8;
+    padding: 75px 425px 40px;
+}
+
+.living-room img {
+    margin: 40px 0px 40px;
+}
+
+.block-article {
+    margin-bottom: 40px;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+.internet-shop {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(43, 41, 41);
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.furniture-list {
+    margin-bottom: 40px;
+}
+
+.list li {
+    margin-bottom: 20px;
+}
+
+.instagram-block {
+    background-color: rgba(30, 40, 50, 0.05);
+    padding: 100px 300px 70px;
+    font-size: 0;
+    text-align: center;
+}
+
+.instagram-block h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.18;
+}
+
+.block-card {
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: 60px;
+}
+
+.block-card img {
+    margin-left: 12px;
+    margin-right: 12px;
+}
