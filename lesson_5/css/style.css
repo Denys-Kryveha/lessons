@@ -4,6 +4,10 @@
 
 @import url(reset.css);
 
+body{
+    min-width: 1920px;
+}
+
 header,
 footer {
     font-family: 'Proxima Nova', sans-serif;
@@ -67,7 +71,6 @@ footer {
 .living-room p,
 .choice-of-bed p {
     font-family: 'Proxima Nova', sans-serif;
-    ;
     font-size: 16px;
     font-weight: 400;
     color: #2b2929;
