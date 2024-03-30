@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+
+@import url("fonts.css");
+
+@import url(reset.css);
+
+header {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2b2929;
+    text-align: center;
+    background-color: rgba(30, 40, 50, 0.05);
+}
+
+.header li {
+    display: inline-block;
+    padding: 25px;
+}
+
+.about-me {
+    color: #fff;
+    background: url(../img/about-background.jpg);
+    padding-top: 120px;
+}
+
+h1 {
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1::after {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 1px;
+    display: block;
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+}
+
+.about-me p {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2.22;
+    text-transform: capitalize;
+    text-align: center;
+    max-width: 992px;
+    margin: 0 auto 60px;
+}
+
+.about-me ul {
+    max-width: 1150px;
+    margin: 0 auto;
+    font-size: 0;
+    padding-bottom: 120px;
+}
+
+.items>* {
+    margin-left: 60px;
+}
+
+.item {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.item :hover {
+    color: rgba(36, 0, 255, 1);
+}
+
+.item a:active {
+    color: rgba(255, 0, 0, 1);
+}
+
+.item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.items li:first-child {
+    margin-left: 0px;
+}
+
+.block-living-room {
+    padding: 75px 0px 40px;
+    background-color: #F8F8F8;
+}
+
+.living-room {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.living-room h2 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #2b2929;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.living-room p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2b2929;
+    line-height: 1.87;
+}
+
+.living-room img {
+    margin-bottom: 40px;
+}
+
+.block-article {
+    margin-bottom: 40px;
+}
+
+
+.block-article>* {
+    margin-bottom: 10px;
+}
+
+.block-article>*:last-child {
+    margin-bottom: 0px;
+}
+
+.internet-shop {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b2929;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.furniture-list {
+    margin-bottom: 40px;
+    font-size: 0;
+}
+
+.list-item::before {
+    background: url("../img/check-mark-yellow.svg") 0 0 no-repeat;
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.furniture-list>* {
+    margin-bottom: 20px;
+}
+
+.list-text {
+    display: inline-block;
+    max-width: 1020px;
+}
+
+.furniture-list>*:last-child {
+    margin-bottom: 0px;
+}
+
+.game-block {
+    background-color: azure;
+}
+
+.game {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+    min-height: 650px;
+    text-align: initial;
+    margin-top: 30px;
+    font-size: 0;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2b2929;
+    line-height: 1.87;
+}
+
+.game-color {
+    background-color: grey;
+}
+
+.game-start {
+    width: 80px;
+    height: 80px;
+    background: url(../img/start-icon.svg) no-repeat;
+    background-color: grey;
+}
+
+.game__line-1 {
+    width: 80px;
+    height: 80px;
+}
+
+.game-start:hover+.game__line-1,
+.game__line-1:hover {
+    width: 100%;
+}
+
+.game__line-2 {
+    width: 1030px;
+    height: 50px;
+    display: inline-block;
+}
+
+.game__line-2-1 {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+.game__line-1:hover~.game__line-2-1,
+.game__line-2-1:hover {
+    display: inline-block;
+    visibility: visible;
+}
+
+.game__line-2-1:hover {
+    height: 100px;
+}
+
+.game__line-3-1 {
+    display: inline-block;
+    visibility: hidden;
+    height: 50px;
+    width: 50px;
+}
+
+.game__line-2-1:hover~.game__line-3 {
+    display: inline-block;
+    width: 1030px;
+    height: 50px;
+}
+
+.game__line-2-1:hover~.game__line-3-1,
+.game__line-3-1:hover {
+    visibility: visible;
+    display: inline-block;
+}
+
+.game__line-3-1:hover {
+    width: 100%;
+}
+
+.game__line-4 {
+    width: 40px;
+    height: 200px;
+    visibility: hidden;
+}
+
+.game__line-3-1:hover~.game__line-4 {
+    visibility: visible;
+    height: 40px;
+}
+
+.game__line-4:hover {
+    visibility: visible;
+    height: 300px;
+}
+
+.game__line-5 {
+    visibility: hidden;
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+}
+
+.game__line-4:hover~.game__line-5,
+.game__line-5:hover {
+    visibility: visible;
+}
+
+.game__line-5:hover {
+    width: 100%;
+    height: 100px;
+}
+
+.game-finish {
+    visibility: hidden;
+    text-align: center;
+    height: 500px;
+}
+
+.game__line-5:hover~.game-finish,
+.game-finish:hover {
+    visibility: visible;
+    background: url("../img/finish.jpg") 0 0 / cover no-repeat fixed;
+}
+
+.show:hover {
+    text-decoration: underline;
+}
+
+.show:visited {
+    color: #9700FF;
+}
+
+.other-container {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.test-1,
+.test-2{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+
+.test-2 p:first-of-type{
+    color:brown;
+}
+
+.test-2 p:last-of-type{
+    color: aqua;
+}
+
+.button-test {
+    padding: 20px;
+    background-color: #9700FF;
+}
+
+.button-test:focus {
+    background-color: aquamarine
+}
+
+.test-target {
+    display: none;
+    padding: 15px;
+    max-width: 45px;
+}
+
+.test-target:target {
+    display: block;
+}
+
+.test-target:has(>p) {
+	color:#9700FF;
+}
+
+.test-3{
+    margin: 20px;
+    border:  1px solid #000000;
+    border-radius: 15px;
+    max-width: 450px;
+}
+
+.test-3 * > div{
+    background-color: blue;
+    margin: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.test-3-1 :not(:last-child){
+    background-color:burlywood
+}
+
+.test-3-2 :not(:first-child){
+    background-color:burlywood
+}
+
+.test-3-3 :nth-child(2){
+    background-color:burlywood
+}
+
+.test-3-4 :nth-last-child(2){
+    background-color:burlywood
+}
+
+.test-3-5 :nth-child(odd){
+    background-color:burlywood
+}
+
+.test-3-6 :nth-child(even){
+    background-color:burlywood
+}
+
+.test-3-7 :nth-child(n+4){
+    background-color:burlywood
+}
+
+.test-3-8 :nth-child(3n-1){
+    background-color:burlywood
+}
+
+.test-3-9 :nth-child(3n+1){
+    background-color:burlywood
+}
+
+.test-3-10 :nth-child(4n){
+    background-color:burlywood
+}
+
+.footer {
+    background-color: #000001;
+}
+
+.contacts {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 112px;
+    font-size: 0;
+}
+
+.list-contacts li {
+    margin-right: 80px;
+}
+
+.call,
+.location,
+.email {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+.call::before {
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: "";
+    background: url(../img/call.svg);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.location {
+    text-transform: capitalize;
+}
+
+.location::before {
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: "";
+    background: url(../img/location.svg);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.email {
+    text-transform: lowercase;
+}
+
+.email::before {
+    width: 20px;
+    height: 16px;
+    display: block;
+    content: "";
+    background: url(../img/email.svg);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.list-contacts>li:last-child {
+    margin-right: 0px;
+}
+
+.links :hover {
+    color: #9700FF
+}
