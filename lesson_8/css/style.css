@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,600&display=swap");
+
+@import url(reset.css);
+
+h1,
+h2 {
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.item {
+    margin: 20px;
+}
+
+.item p {
+    display: inline-block;
+    padding: 16px;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2.22;
+    text-align: center;
+}
+
+.item img {
+    max-width: 300px;
+    max-height: 300px;
+    vertical-align: middle;
+}
+
+.raster {
+    margin-left: -100px;
+}
