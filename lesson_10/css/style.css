@@ -1,0 +1,259 @@
+@import url("fonts.css");
+
+@import url(reset.css);
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 50;
+}
+
+.header__container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 25px 0px;
+    height: 100px;
+}
+
+.main-header__image {
+    max-width: 100%;
+    max-height: 50px;
+    vertical-align: middle;
+    margin-right: 34px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #FFBC57;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.button :hover {
+    text-decoration: underline;
+}
+
+.button__text {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.26;
+}
+
+.button__text::before {
+    background: url(../img/menu-catalog.svg) 0 0 no-repeat;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.button:hover .button__text::before {
+    background: url(../img/close-catalog.svg) 0 0 no-repeat;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.menu {
+    margin: 10px 0px;
+    position: absolute;
+    top: 100%;
+    font-size: 0;
+    background-color: #fff;
+    height: 616px;
+    width: 300px;
+    border-radius: 8px 0 0 8px;
+    display: none;
+}
+
+.menu:target {
+    display: block;
+}
+
+.menu__item {
+    color: #2b2929;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 15px 10px 15px 30px;
+    vertical-align: middle;
+    background: url(../img/arrow-menu.svg) right 15px center / auto no-repeat;
+}
+
+.menu__item img {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+.menu__item:hover {
+    background: url(../img/arrow-menu-black.svg) right 15px center / auto no-repeat, #FFBC57;
+}
+
+.menu__item:hover .sub-menu {
+    display: block;
+}
+
+.menu__item:hover::after {
+    background: url(../img/arrow-menu-black.svg) 0 0 no-repeat;
+    content: "";
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+}
+
+.menu__link:hover {
+    background-color: #FFBC57;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    border-left: 5px solid #FFBC57;
+    height: 616px;
+    width: 335px;
+    padding: 28px 30px 25px;
+    border-radius: 0 8px 8px 0;
+    display: none;
+}
+
+.sub-menu__item {
+    margin: 10px 0;
+    color: #2b2929;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2.1;
+}
+
+.sub-menu__link:hover {
+    text-decoration: underline;
+    color: #FFBC57;
+}
+
+.page {
+    background-color: #F8F8F8;
+    font-size: 0;
+}
+
+.page__container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.categories {
+    padding-top: 70px;
+}
+
+.categories__container {
+    padding-top: 40px;
+}
+
+.card-categories {
+    display: inline-block;
+    background: url(../img/background-cart.svg) 0 100% / 100% no-repeat, #fff;
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 250px;
+}
+
+.card-categories:hover {
+    border: 1px solid #FFBC57;
+    box-shadow: 5px 5px 5px #FFBC57;
+}
+
+.categories__title {
+    color: #2b2929;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.card-categories__title {
+    color: #2b2929;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    display: inline-block;
+    width: 85%;
+}
+
+.card-categories__title:hover {
+    color: #FFBC57;
+}
+
+.card-categories__amount {
+    color: #b1b1b1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    display: inline-block;
+}
+
+.card-categories:nth-child(even) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card-categories:nth-child(6) {
+    margin-left: 0px;
+}
+
+.card-categories:last-child {
+    margin-right: 0px;
+}
+
+.card-categories__image img {
+    max-width: 100%;
+    text-align: center;
+}
+
+.card-categories__icon {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.card-categories__icon img {
+    max-width: 100%;
+}
+
+.footer__block {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.block-footer__icon {
+    vertical-align: middle;
+}
+
+.block-footer__link:hover {
+    color: #FFBC57;
+    text-decoration: underline;
+}
