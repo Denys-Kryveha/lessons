@@ -1,0 +1,336 @@
+@import url(reset.css);
+
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+
+.menu {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.menu__item {
+    display: inline-block;
+    padding: 15px;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+.page {
+    padding: 30px;
+}
+
+.main-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.cards-2d__item,
+.cards-3d__item {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 50px;
+    display: inline-block;
+}
+
+.translate__item,
+.translate-2__item,
+.scale__item,
+.scale-2__item,
+.rotate__item,
+.rotate-2__item,
+.skew__item,
+.skew-2__item,
+.origin__item {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+.translate__item:hover {
+    transform: translate(10px, 15px);
+}
+
+
+.translate-2__item:hover {
+    transform: translate(-20px, 30px);
+}
+
+.scale__item:hover {
+    transform: scale(0.5);
+}
+
+.scale-2__item:hover {
+    transform: scale(-1, 1);
+}
+
+.rotate__item:hover {
+    transform: rotate(-45deg);
+}
+
+.rotate-2__item:hover {
+    transform: rotate(45deg);
+}
+
+.skew__item:hover {
+    transform: skew(10deg, 5deg);
+
+}
+
+.skew-2__item:hover {
+    transform: skew(-10deg, -5deg);
+}
+
+.origin__item:hover {
+    transform: rotate(10deg);
+    transform-origin: top;
+}
+
+.rotatex__item,
+.translate3d__item,
+.scale3d__item,
+.rotate3d__item,
+.preserve3d__item,
+.visibility3d__item {
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px;
+}
+
+.cards-3d__item:hover {
+    perspective: 400px;
+}
+
+.rotatex__item {
+    transform: rotateX(45deg);
+}
+
+.translate3d__item:hover {
+    transform: translate3d(20px, 50px, 90px);
+}
+
+.scale3d__item:hover {
+    transform: scale3d(1, 0.8, 1);
+}
+
+.rotate3d__item:hover {
+    transform: rotate3d(30, 15, 15, 50deg);
+}
+
+.preserve3d {
+    transform-style: preserve-3d;
+}
+
+.preserve3d__item:hover {
+    transform: rotateX(55deg);
+}
+
+.visibility3d__item:hover {
+    backface-visibility: hidden;
+    transform: rotate(-180deg);
+}
+
+.card__body {
+    position: relative;
+    width: 300px;
+    perspective: 800px;
+    margin: 0 auto;
+}
+
+.card__body img {
+    width: 100%;
+}
+
+.card__front,
+.card__back {
+    transition: all 0.5s;
+}
+
+.card__front {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card__back {
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card__body:hover .card__front {
+    transform: rotateY(0deg);
+}
+
+.card__body:hover .card__back {
+    transform: rotateY(-180deg);
+}
+
+.car {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.salon {
+    border-bottom: 110px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 300px;
+    border-radius: 20% 80% 100% 0% / 0% 100% 0% 100%;
+    position: relative;
+}
+
+
+.left-car__back {
+    width: 10px;
+    height: 60px;
+    display: inline-block;
+    background-color: blue;
+    transform: rotate(23deg);
+    position: absolute;
+    left: 0;
+    top: 8px;
+    margin-left: -10px;
+}
+
+.left-car__windows {
+    display: inline-block;
+    border-bottom: 50px solid blue;
+    border-left: 25px solid transparent;
+    height: 0;
+    width: 95px;
+    position: absolute;
+    left: 0px;
+    top: 18px;
+}
+
+.left-car__handle {
+    background-color: darkslategrey;
+    height: 5px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0px;
+    top: 75px;
+}
+
+.line {
+    border-left: 3px solid #000;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    left: 52%;
+}
+
+.right-car__windows {
+    width: 90px;
+    height: 40px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 20% 80% 100% 0% / 0% 100% 0% 100%;
+    position: absolute;
+    right: 0;
+    top: 28px;
+    margin-right: -5px;
+}
+
+.right-car__handle {
+    background-color: darkslategrey;
+    height: 5px;
+    width: 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 33%;
+    top: 75px;
+}
+
+.light {
+    background-color: aquamarine;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    margin-left: 25px;
+    top: 70px;
+}
+
+.light:hover {
+    background-color: darkgoldenrod;
+}
+
+.car__bottom {
+    width: 300px;
+    height: 15px;
+    background: #000;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.wheel {
+    margin-top: -40px;
+}
+
+.wheel__left {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 5px dashed grey;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 65px;
+    position: relative;
+    z-index: 5;
+}
+
+.wheel__right {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 5px dashed grey;
+    display: inline-block;
+    margin-left: 65px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.wheel__disk {
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    margin: 5px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+}
